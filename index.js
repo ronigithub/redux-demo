@@ -7,7 +7,7 @@ const applyMiddleware = redux.applyMiddleware;
 // Logger
 const logger = reduxLogger.createLogger();
 // Combine Reducer
-const combineReducer = redux.combineReducers;
+const combineReducers = redux.combineReducers;
 
 // Actions
 const BUY_CAKE = "BUY_CAKE";
@@ -64,7 +64,7 @@ const iceCreamReducer = (state = initialIceCreamState, action) => {
 };
 
 // Combine Reducer
-const rootReducer = redux.combineReducers({
+const rootReducer = combineReducers({
   cake: cakeReducer,
   iceCream: iceCreamReducer,
 });
