@@ -57,11 +57,9 @@ const iceCreamReducer = (state = initialIceCreamState, action) => {
         ...state,
         numberOfIceCream: state.numberOfIceCream - 1,
       };
-      break;
 
     default:
       return state;
-      break;
   }
 };
 
